@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Fluxo de Caixa</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon-cx.ico" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Sistema de Fluxo de Caixa</h1>
+        <div class="form-container">
+            <form id="transaction-form">
+                <input type="date" id="date" required>
+                <select id="type" required>
+                    <option value="entrada">Entrada</option>
+                    <option value="saida">Saída</option>
+                </select>
+                <input type="number" id="value" placeholder="Valor" required>
+                <input type="text" id="barber" placeholder="Produto" list="barber-list">
+                <datalist id="barber-list"></datalist>
+                <input type="text" id="observation" placeholder="Observações">
+                <button type="submit">Adicionar Transação</button>
+            </form>
+        </div>
+        <div class="filter-container">
+            <form id="filter-form">
+                <input type="date" id="filter-date-start" placeholder="Data Início">
+                <input type="date" id="filter-date-end" placeholder="Data Fim">
+                <select id="filter-type">
+                    <option value="">Todos</option>
+                    <option value="entrada">Entrada</option>
+                    <option value="saida">Saída</option>
+                </select>
+                <input type="text" id="filter-barber" placeholder="Produto">
+                <button type="submit">Filtrar</button>
+            </form>
+        </div>
+        <div class="totals-container">
+            <div>Total de Entradas: <span id="total-entradas">0</span></div>
+            <div>Total de Saídas: <span id="total-saidas">0</span></div>
+            <div>Saldo Total: <span id="saldo-total">0</span></div>
+        </div>
+        <div class="table-container">
+            <table id="transaction-table">
+                <thead>
+                    <tr>
+                        <th>Data</th>
+                        <th>Tipo</th>
+                        <th>Valor</th>
+                        <th>Barbeiro</th>
+                        <th>Observações</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+        <div class="chart-container">
+            <canvas id="transaction-chart"></canvas>
+        </div>
+        <footer>criado por <a target="_blank" href="https://github.com/Esaneto">esaneto</a></footer>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
