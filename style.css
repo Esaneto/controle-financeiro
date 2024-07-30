@@ -74,8 +74,20 @@ th {
     color: green;
 }
 
+#total-green{
+    color: green;
+}
+
 .saida {
     color: red;
+}
+
+#total-red{
+    color: red;
+}
+
+#total-blue{
+    color: #0056b3;
 }
 
 .chart-container {
@@ -92,7 +104,7 @@ th {
 footer, a {
     text-align: end;
     text-decoration: none;
-    color: black;
+    color: #dcdcdc;
 
 }
 

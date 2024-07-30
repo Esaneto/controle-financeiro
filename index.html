@@ -27,9 +27,9 @@
         </div>
         
         <div class="totals-container">
-            <div>Total de Entradas: <span id="total-entradas">0</span></div>
-            <div>Total de Saídas: <span id="total-saidas">0</span></div>
-            <div>Saldo Total: <span id="saldo-total">0</span></div>
+            <div id="total-green">Total de Entradas: <span id="total-entradas">0</span></div>
+            <div id="total-red">Total de Saídas: <span id="total-saidas">0</span></div>
+            <div id="total-blue">Saldo Total: <span id="saldo-total">0</span></div>
         </div>
         <div class="table-container">
             <table id="transaction-table">
@@ -49,7 +49,7 @@
         <div class="chart-container">
             <canvas id="transaction-chart"></canvas>
         </div>
-        <footer>criado por <a target="_blank" href="https://github.com/Esaneto">esaneto</a></footer>
+        
         <div class="filter-container">
             <form id="filter-form">
                 <input type="date" id="filter-date-start" placeholder="1º Data">
@@ -63,6 +63,7 @@
                 <button type="submit">Filtrar</button>
             </form>
         </div>
+        <footer>criado por <a target="_blank" href="https://github.com/Esaneto">esaneto</a></footer>
     </div>
     
     <script src="script.js"></script>
