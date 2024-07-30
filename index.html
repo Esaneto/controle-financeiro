@@ -25,19 +25,7 @@
                 <button type="submit">Adicionar Transação</button>
             </form>
         </div>
-        <div class="filter-container">
-            <form id="filter-form">
-                <input type="date" id="filter-date-start" placeholder="1º Data">
-                <input type="date" id="filter-date-end" placeholder="2º Data">
-                <select id="filter-type">
-                    <option value="">Todos</option>
-                    <option value="entrada">Entrada</option>
-                    <option value="saida">Saída</option>
-                </select>
-                <input type="text" id="filter-barber" placeholder="Produto">
-                <button type="submit">Filtrar</button>
-            </form>
-        </div>
+        
         <div class="totals-container">
             <div>Total de Entradas: <span id="total-entradas">0</span></div>
             <div>Total de Saídas: <span id="total-saidas">0</span></div>
@@ -62,6 +50,19 @@
             <canvas id="transaction-chart"></canvas>
         </div>
         <footer>criado por <a target="_blank" href="https://github.com/Esaneto">esaneto</a></footer>
+        <div class="filter-container">
+            <form id="filter-form">
+                <input type="date" id="filter-date-start" placeholder="1º Data">
+                <input type="date" id="filter-date-end" placeholder="2º Data">
+                <select id="filter-type">
+                    <option value="">Todos</option>
+                    <option value="entrada">Entrada</option>
+                    <option value="saida">Saída</option>
+                </select>
+                <input type="text" id="filter-barber" placeholder="Produto">
+                <button type="submit">Filtrar</button>
+            </form>
+        </div>
     </div>
     
     <script src="script.js"></script>
