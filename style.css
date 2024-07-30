@@ -101,16 +101,16 @@ th {
     color: red;
 }
 
-footer, a {
-    text-align: end;
-    text-decoration: none;
-    color: #dcdcdc;
-
-}
-
 a:hover {
     background-color: black;
     color: white;
     border-radius: 10px 0px 10px 0px;
     transition-duration: 0.5s;
+}
+
+footer, a {
+    text-align: end;
+    text-decoration: none;
+    color: #dcdcdc;
+
 }
