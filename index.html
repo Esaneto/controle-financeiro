@@ -18,10 +18,11 @@
                     <option value="entrada">Entrada</option>
                     <option value="saida">Saída</option>
                 </select>
-                <input type="number" id="value" placeholder="Valor" required>
+                <input type="number" step="0.01" id="value" placeholder="Valor" required>
                 <input type="text" id="barber" placeholder="Produto" list="barber-list">
                 <datalist id="barber-list"></datalist>
-                <input type="text" id="observation" placeholder="Observações">
+                <input type="text" id="observation" placeholder="Observações" list="observation">
+                <datalist id="observation"></datalist>
                 <button type="submit">Adicionar Transação</button>
             </form>
         </div>

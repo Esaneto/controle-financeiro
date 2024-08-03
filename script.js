@@ -52,7 +52,6 @@ document.addEventListener('DOMContentLoaded', () => {
         updateTable();
         updateChart();
         updateTotals();
-        form.reset();
     });
 
     filterForm.addEventListener('submit', (e) => {
@@ -184,3 +183,22 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 });
+if(localStorage.date) {
+    document.getElementById('date').value = localStorage.date;}
+    if(localStorage.value) {
+    document.getElementById('value').value = localStorage.value;}
+    if(localStorage.barber) {
+    document.getElementById('barber').value = localStorage.barber;}
+    if(localStorage.observation) {
+    document.getElementById('observation').value = localStorage.observation;}
+    var savedate = function() {
+        var date = document.getElementById('date').value;
+        var value = document.getElementById('value').value;
+        var barber = document.getElementById('barber').value;
+        var observation = document.getElementById('observation').value;
+        localStorage.setItem('date',date);
+        localStorage.setItem('value',value);
+        localStorage.setItem('barber',barber);
+        localStorage.setItem('observation',observation);
+    }
+    document.onchange = savedate;
